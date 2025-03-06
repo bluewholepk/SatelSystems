@@ -77,6 +77,8 @@ img{
     background-color: rgba(255, 255, 255, 0.2); 
     padding: 10px;
     border-radius: 10px;
+    border-color: black;
+    border: 10px;
 }
 .Hello2{
     display: flex;
