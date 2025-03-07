@@ -48,6 +48,7 @@ header ol li{
     margin: 10px;
     
 }
+
 h1,h2,h3{
     text-align: center;
 }
@@ -55,6 +56,10 @@ h1,h2,h3{
 p{
     text-align: center;
     font-style: italic;
+}
+
+a{
+    text-decoration: none;
 }
 
 .loginbutton{
@@ -108,15 +113,21 @@ img{
 
   /* .class */
 .Hello1{
-    /* margin: 20px; */
+    margin: 10px;
     /*  background-color: rgb(64, 81, 87); */
     background-color: rgba(255, 255, 255, 0.1); 
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid black;
+
+   
+    
 }
-.Hello2{
+.items{
     display: flex;
-    margin: 30px;
+    /* margin: 30px; */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
