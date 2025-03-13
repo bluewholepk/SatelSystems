@@ -200,18 +200,26 @@ img{
     animation-play-state: running;
 }
 
-.loading:hover{
+
+
+
+
+@keyframes load {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.loading:hover {
     animation-play-state: paused;
 }
 
-@keyframes load{
-    0%{
-        transform:rotate(0);
-    }
-    100%{
-        transform :rotate(360deg);
-    }
-}
+
 
 /* if background-image is not commented media will not work */
 @media screen and (max-width : 720px) {
