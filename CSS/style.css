@@ -29,7 +29,7 @@ header{
     /* background-color: rgba(29, 29, 29, 0.3); */
 
     /* Liner Gradient */
-    /* background-image: linear-gradient(to  right ,black, gray,powderblue); */
+    background-image: linear-gradient(to  right ,black, gray,powderblue);
 
     /* Radial Gradiant */
     /* background: radial-gradient( red, yellow, green,blue); */
