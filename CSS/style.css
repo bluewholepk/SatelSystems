@@ -8,6 +8,7 @@ body{
     background-position: center;
     margin: 0%;
     padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body::before {
@@ -26,7 +27,20 @@ header{
     display: flex;
     margin: 30px;
     /* background-color: rgba(29, 29, 29, 0.3); */
-    background-image: linear-gradient(to  right ,black, gray,powderblue);
+
+    /* Liner Gradient */
+    /* background-image: linear-gradient(to  right ,black, gray,powderblue); */
+
+    /* Radial Gradiant */
+    /* background: radial-gradient( red, yellow, green,blue); */
+    /* background: radial-gradient(circle, red, yellow, green,blue); */
+    /* background: radial-gradient(circle at top, red, yellow, green,blue); */
+    /* background: radial-gradient(circle at top left, red, yellow, green,blue); */
+
+    /* Conical Gradiant  */
+    /* background: conic-gradiant(red , green, blue); */
+    /* background : conic-gradient(from 30deg at center, red, green, blue); */
+
     padding: 20px;
     padding-top: 0%;
     padding-bottom: 0%;
@@ -132,5 +146,38 @@ img{
     justify-content: center;
     flex-wrap: wrap;
 }
+.globle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
 
+.animator{
+    background-color: red;
+    color: blue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    animation-duration: 2s;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        scale: 2;
+    }
+
+    100%{
+        /* scale : 2; */
+        transform: rotate(360deg);
+    }
+}
 
