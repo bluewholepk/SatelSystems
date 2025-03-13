@@ -159,9 +159,14 @@ img{
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+
     animation-duration: 2s;
     animation-name: spin;
-    animation-timing-function: linear;
+
+    /* animation-timing-function: linear; */
+    animation-timing-function: ease;
+    /* animation-timing-function: ease-in-out; */
+    
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
 
@@ -173,11 +178,13 @@ img{
     }
     50%{
         scale: 2;
+        border-radius: 0%;
     }
 
     100%{
-        /* scale : 2; */
+        scale : 2;
         transform: rotate(360deg);
+        border-radius: 50%;
     }
 }
 
