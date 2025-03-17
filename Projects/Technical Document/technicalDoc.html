@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Document</title>
+    <title>MERN Stack Setup</title>
 </head>
 <body>
+    <h1>MERN Stack Installation & Setup</h1>
     
+    <h2>1. Install Node.js & MongoDB</h2>
+    <p>Download and install <a href="https://nodejs.org/" target="_blank">Node.js</a> and <a href="https://www.mongodb.com/try/download/community" target="_blank">MongoDB</a>.</p>
+    
+    <h2>2. Initialize Node.js Project</h2>
+    <pre><code>mkdir mern-app && cd mern-app
+npm init -y
+npm install express mongoose cors dotenv</code></pre>
+    
+    <h2>3. Create Express Server</h2>
+    <pre><code>const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
+
+const app = express();
+app.use(express.json());
+app.use(cors());
+
+app.listen(5000, () => console.log('Server running on port 5000'));</code></pre>
+    
+    <h2>4. Setup React Frontend</h2>
+    <pre><code>npx create-react-app client
+cd client
+npm start</code></pre>
+    
+    <h2>5. Run the Application</h2>
+    <pre><code>node server.js</code></pre>
+    <pre><code>cd client
+npm start</code></pre>
+    
+    <h2>Conclusion</h2>
+    <p>MERN stack setup is complete!</p>
 </body>
 </html>
