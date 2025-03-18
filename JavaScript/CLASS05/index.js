@@ -85,4 +85,7 @@ let obj1 = {
  console.log("Lowwer = ", variable.toLocaleLowerCase());
 
  let variable2 =variable.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(" ");
- console.log(variable2);
+ let variable3 =variable.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(" ");
+
+ console.log('with Join(" ") Function = ',variable2);
+ console.log('Withlout Join(" ") Function = ',variable3)
