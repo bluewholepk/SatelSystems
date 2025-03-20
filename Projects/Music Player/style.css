@@ -102,10 +102,26 @@ audio{
 
 
 footer{
-    color: gray;
     text-align: center;
-    text-shadow: 2px 2px 10px blue;
-    background-color: black;
     padding: 20px;
-}
-
+    /* margin: 20px; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 0px 10px blue; */
+    background-color: black;
+    color: white;
+    /* border: 1px solid white; */
+  
+  }
+  
+  /* .contact-message{
+    display: flex;
+  } */
+  
+  .footer-link {
+    padding: 1px;
+    /* font-size:0.9rem; */
+    color:white;
+    /* background:red; */
+    /* border-radius: 50%; */
+    align-items: center;
+  }
