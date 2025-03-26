@@ -1,5 +1,6 @@
 console.log("1). Create a Shopping cart price calculation and add discount if the price is more than Rs 100");
 console.log("");
+
 // function cart(item,price){
 //     let dis =0;
 
@@ -25,7 +26,7 @@ function cart(items) {
     let totalPrice = 0;
 
     for (let i = 0; i < items.length; i++) {
-        console.log(` ${i+1}) Item: ${items[i].name}, Price: ${items[i].price}`);
+        console.log(` ${i+1}) Item: ${items[i].name}, Price: ${items[i].price} Rs`);
         totalPrice = totalPrice + items[i].price;
 
     }
@@ -40,23 +41,27 @@ function cart(items) {
     let finalPrice = totalPrice - discount;
 
     console.log("-------------------------------");
-    console.log(`Total Price:  ${totalPrice}`);
-    console.log(`Discount :  ${discount}`);
-    console.log(`Final Price :  ${finalPrice}`);
+    console.log(`Total Price:  ${totalPrice} Rs`);
+
+    if(discount>0){  
+        console.log(`Discount :  ${discount} Rs`);
+        console.log(`Final Price :  ${finalPrice} Rs`);
+    }
+    
     console.log("-------Thank You! Visit Again-------");
     console.log("");
 
 }
 
-// const shoppingCart = [
-//     { name: "Shoes", price: 60 },
-//     { name: "Book", price: 50 },
-//     { name: "Bag", price: 30 }
-// ];
-
 const shoppingCart = [
+    { name: "Shoes", price: 60 },
     { name: "Book", price: 50 },
     { name: "Bag", price: 30 }
 ];
+
+// const shoppingCart = [
+//     { name: "Book", price: 50.00 },
+//     { name: "Bag", price: 30.00 }
+// ];
 
 cart(shoppingCart);

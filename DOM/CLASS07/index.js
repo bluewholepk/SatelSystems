@@ -67,20 +67,28 @@
 // const add = (a,b)=> a+b;
 // console.log(add(1,2));
 
-function timer(){
-    let data= document.getElementById("clock");
-    let hours = new Date().getHours();
-    let minutes = new Date().getMinutes();
-    let seconds = new Date().getSeconds(); 
-    // if(hours>13){
-    //     let pm = "PM"
-    // }
-    // else{
-    //     let pm ="AM"
-    // }
-    data.innerText = `${hours} : ${minutes} : ${seconds} `;
-}
-setInterval(()=>{
-    timer();
-},1000)
+// function timer(){
+//     let data= document.getElementById("clock");
+//     let hours = new Date().getHours();
+//     let minutes = new Date().getMinutes();
+//     let seconds = new Date().getSeconds(); 
 
+//     if (hours >= 12) {
+//         ampm = "PM";
+//     } else {
+//         ampm = "AM";
+//     }
+//     data.innerText = `${hours} : ${minutes} : ${seconds} ${ampm}`;
+// }
+// setInterval(()=>{
+//     timer();
+// },1000)
+
+function showData(){
+    const variable = document.getElementById("input").value;
+    console.log(variable);
+    const p = document.getElementById("content");
+    
+    p.innerText = variable;
+    p.style.color= "White";
+}
